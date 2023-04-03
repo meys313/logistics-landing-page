@@ -1,0 +1,19 @@
+.button--gradient{
+    border: none;
+    font: inherit;
+    color: #fff;
+    font-weight: 700;
+    background: linear-gradient(90deg, #FF903E 0%, #FF2C2C 100%);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    line-height: 1.1;
+}
+.button--full{
+    width: 100%;
+}
+
+.button--clients{
+    margin-right: 40px;
+}

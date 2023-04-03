@@ -1,0 +1,40 @@
+.link{
+    font-size: 18px;
+    color: #464646;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+
+.link:hover{
+    color:#FF3E2F;
+}
+
+.link--interactive{
+    display: inline-block;
+    color: #004AF2;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+
+.link--interactive:hover{
+    color:#FF3E2F;
+}
+
+.link--interactive:after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: #004AF2;
+    pointer-events: none;
+    margin-top: 5px;
+}
+
+.link--interactive:hover:after{
+    background-color:#FF3E2F;
+    width: 100%;
+    transition: background-color .2s linear, width .2s linear;
+}
+
+

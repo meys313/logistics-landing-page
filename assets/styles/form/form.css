@@ -1,0 +1,65 @@
+.form{
+    background-color: #004AF2;
+    width: 100%;
+    color:#fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.form__header{
+    padding: 20px 30px;
+    background-color: #033FC9;
+}
+.form__title{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+}
+.form__desc{
+    margin-top: 10px;
+    line-height: 1.4;
+}
+.form__content{
+    padding: 20px 30px;
+}
+.form__group{
+    margin-bottom: 25px;
+}
+.form__input{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color:#fff;
+    display: block;
+    width: 100%;
+    background:none;
+    border: 1px solid transparent;
+    padding: 10px 10px 10px 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    transition: border .1s linear;
+
+}
+.form__input::placeholder{
+    color:#fff;
+}
+.form__input:focus{
+    outline: none;
+    border: 1px solid #fff;
+}
+
+.form__input--user{
+    background: url("../../icons/form/person.svg") 5px center no-repeat;
+}
+.form__input--phone{
+    background: url("../../icons/form/phone.svg") 5px center no-repeat;
+}
+.form__input--email{
+    background: url("../../icons/form/email.svg") 5px center no-repeat;
+}
+
+
+.form--intro{
+    max-width: 400px;
+    position: relative;
+    bottom: -30px;
+}
