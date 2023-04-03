@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/styles/style.css">
     <title>CenterLogistic</title>
+    <script src="https://kit.fontawesome.com/a3c0ffdb65.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
@@ -465,16 +466,105 @@
         </div>
 
         <nav class="footer__nav">
-            <li>
-                <a href="#" class="link link--footer">Terms & Contidions</a>
-            </li>
-            <li>
-                <a href="#"  class="link link--footer"> Privacy Policy</a>
-            </li>
-            <li>
-                <a href="#"  class="link link--footer">Our blog</a>
-            </li>
+            <ul>
+                <li>
+                    <a href="#" class="link link--footer">Terms & Contidions</a>
+                </li>
+                <li>
+                    <a href="#"  class="link link--footer"> Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#"  class="link link--footer">Our blog</a>
+                </li>
+            </ul>
         </nav>
     </footer>
+
+
+    <div class="modal">
+
+        <div class="modal__inner" id="formModal">
+            <button class="modal__close">
+                <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+            </button>
+            <div class="modal__form">
+                <div class="form form--white">
+                    <div class="form__header">
+                        <h3 class="form__title">Need to deliver your cargo?
+                            We can help!</h3>
+                        <p class="form__desc">
+                            Fill a little and form we will call you back!
+                        </p>
+                    </div>
+                    <div class="form__content">
+                        <form action="#" method="post">
+                            <div class="form__group">
+                                <input type="text"
+                                       class="form__input form__input--user"
+                                       placeholder="Your name"
+                                >
+                            </div>
+
+                            <div class="form__group">
+                                <input type="tel"
+                                       class="form__input form__input--phone"
+                                       placeholder="Your phone"
+                                >
+                            </div>
+
+                            <div class="form__group">
+                                <input type="email"
+                                       class="form__input form__input--email"
+                                       placeholder="Your e-mail"
+                                >
+                            </div>
+                        </form>
+
+                        <button class="button--gradient button--full">Call me back</button>
+                    </div>
+                    <div class="modal__contacts">
+                        <h3 class="contacts__title">Our contacts</h3>
+                        <div class="contacts__list">
+                            <span>New York, Street, ZIP code</span>
+                            <span>Phone: +9948373123</span>
+                            <span>E-mail: hello@centerlogistic.com</span>
+                        </div>
+                    </div> <!-- modal__contacts -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="responseModal">
+        <div class="modal__inner">
+            <button class="modal__close">
+                <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+            </button>
+            <div class="modal__response">
+                <div class="form form--white">
+                    <div class="form__header">
+                        <div class="form__response-img">
+                            <img src="assets/icons/success.svg" alt="success">
+                        </div>
+                        <h3 class="form__title">Thanks for your request</h3>
+                        <p class="form__desc">
+                            We call you back as soon as possible!
+                        </p>
+                    </div>
+                    <div class="form__content">
+                        <div class="modal__contacts">
+                            <h3 class="contacts__title">Our contacts</h3>
+                            <div class="contacts__list">
+                                <span>New York, Street, ZIP code</span>
+                                <span>Phone: +9948373123</span>
+                                <span>E-mail: hello@centerlogistic.com</span>
+                            </div>
+                        </div> <!-- modal__contacts -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

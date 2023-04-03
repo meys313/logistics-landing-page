@@ -3,6 +3,7 @@
     font-family: 'Lato', sans-serif;
     font-family: 'PT Sans', sans-serif;
 */
+@import "modal.css";
 @import "UI/buttons.css";
 @import "UI/link.css";
 @import "form/form.css";
@@ -69,7 +70,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 50;
 
 }
 .header__inner{
@@ -370,11 +371,12 @@ body {
 }
 
 .team__content{
+    margin-top: 20px;
     display: grid;
     grid-template-rows: auto;
     grid-auto-rows: auto;
     grid-auto-flow: row;
-    gap: 5px 0;
+    gap: 10px 0;
 }
 .team__name{
     font-family: 'Lato', sans-serif;
@@ -390,7 +392,7 @@ body {
     grid-template-rows: auto;
     grid-auto-rows: auto;
     grid-auto-flow: row;
-    gap: 5px 0;
+    gap: 10px 0;
 }
 
 .team__email, .team__phone{
@@ -418,6 +420,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 5px 30px rgba(0, 0, 0, .2);
     padding: 50px 60px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -437,7 +440,7 @@ body {
     font-family: 'Lato', sans-serif;
 }
 .mission__second-text{
-    margin-top: 5px;
+    margin-top: 20px;
     font-family: 'Lato', sans-serif;
     font-size: 21px;
     line-height: 25px;
@@ -518,6 +521,8 @@ body {
 
 
 .footer__nav{
+}
+.footer__nav ul{
     display: grid;
     grid-auto-columns: auto;
     grid-template-columns: auto;

@@ -9,6 +9,10 @@
     padding: 20px 30px;
     background-color: #033FC9;
 }
+.form__response-img{
+    display: flex;
+    justify-content: center;
+}
 .form__title{
     font-family: 'Lato', sans-serif;
     font-weight: 900;
@@ -63,3 +67,45 @@
     position: relative;
     bottom: -30px;
 }
+
+/*---------- form white ----------*/
+
+.form--white{
+    background-color: #fff;
+}
+
+.form--white .form__header{
+    background-color: #fff;
+}
+.form--white .form__title{
+    color: #004AF2;
+    font-size: 24px;
+    text-align: center;
+}
+
+.form--white .form__desc{
+    color: #2C2C2C;
+    text-align: center;
+}
+
+.form--white .form__input{
+    color: #2C2C2C;
+    border-bottom: 1px solid #E8E8E8;
+}
+.form--white .form__input:focus{
+    outline: none;
+    border: 1px solid #c7c7c7;
+}
+.form--white .form__input::placeholder{
+    color: #2C2C2C;
+}
+.form--white .form__input--user{
+    background: url("../../icons/person.svg") 5px center no-repeat;
+}
+.form--white .form__input--phone{
+    background: url("../../icons/phone.svg") 5px center no-repeat;
+}
+.form--white .form__input--email{
+    background: url("../../icons/email.svg") 5px center no-repeat;
+}
+
