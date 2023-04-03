@@ -4,6 +4,7 @@
     font-family: 'PT Sans', sans-serif;
 */
 @import "modal.css";
+@import "articles.css";
 @import "UI/buttons.css";
 @import "UI/link.css";
 @import "form/form.css";
@@ -456,40 +457,28 @@ body {
     background-image: linear-gradient(to right, #004AF2 50%, #FC2C2B 50%);
 }
 
-/* ---------- articles ---------- */
+/* ---------- articles preview ---------- */
 
-.articles{
+.articles-preview{
 
 }
-.articles__list{
+.articles-preview__list{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
 
-.articles__item{
+.articles-preview__item{
     flex-basis: 40%;
 }
 
-.articles__title{
-    color: #2C2C2C;
-    font-weight: 700;
-    font-size: 18px;
-}
-.articles__desc{
-    margin: 15px 0;
-    line-height: 21px;
-}
-.articles__date{
-    color: #6E6E6E;
-    font-size: 12px;
-}
-.button--gradient--mission{
+.button--gradient--articles{
     margin-top: 50px;
 }
 
 /* ---------- footer ---------- */
 .section--footer{
+    padding: 30px 0;
     background-color: #F9F9F9;
     display: grid;
     grid-template-rows: auto;
