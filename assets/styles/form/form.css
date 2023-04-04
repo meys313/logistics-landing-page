@@ -60,8 +60,12 @@
 .form__input--email{
     background: url("../../icons/form/email.svg") 5px center no-repeat;
 }
-
-
+.button--form:first-of-type{
+    margin-top: 0;
+}
+.button--form{
+    margin-top: 10px;
+}
 .form--intro{
     max-width: 400px;
     position: relative;
@@ -109,3 +113,22 @@
     background: url("../../icons/email.svg") 5px center no-repeat;
 }
 
+/* media query */
+
+/* max width 600  */
+@media(max-width: 600px){
+    .form__header{
+        padding: 20px 0;
+    }
+    .form__content{
+        padding: 10px 5px;
+    }
+
+    .form__input--user{
+        background-position: left 20px;
+    }
+
+    .form__input{
+        padding: 10px 10px 10px 40px;
+    }
+}

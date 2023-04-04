@@ -17,3 +17,16 @@
 .button--clients{
     margin-right: 40px;
 }
+
+.button--blue{
+    border: none;
+    font: inherit;
+    color: #fff;
+    font-weight: 700;
+    background: #004AF2;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    line-height: 1.1;
+}
