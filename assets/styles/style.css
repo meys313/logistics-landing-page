@@ -72,6 +72,7 @@ body {
     left: 0;
     right: 0;
     z-index: 50;
+    transition: box-shadow 0.3s ease-in-out;
 
 }
 .header__inner{
@@ -81,6 +82,11 @@ body {
     align-items: center;
 }
 
+.header__logo{
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color .5s ease;
+}
 /* ---------- header-nav  ---------- */
 .nav__burger{
     padding: 0;
@@ -111,7 +117,7 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    transition: background-color .3s ease;
+    transition: background-color .5s ease, margin-right .5s ease;
 }
 .nav__link.active{
     background-color: #004AF2;
@@ -119,8 +125,28 @@ body {
 .nav__link:hover{
     background-color: #004AF2;
 }
-.nav__link.active{
-    background-color: #004AF2;
+
+.header--scroll{
+    background-color: inherit;
+    border-radius: 5px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .2);
+}
+.header--scroll .header__logo{
+    background-color: #2C2C2C;
+}
+
+.header--scroll .nav__link{
+    border-radius: 5px;
+    background-color: #2C2C2C;
+    height: 50%;
+    margin-right: 10px;
+}
+
+.header--scroll .nav__link.active{
+    background-color: #FF3E2F;
+}
+.header--scroll .nav__link:hover{
+    background-color: #FF3E2F;
 }
 
 /* ---------- intro  ---------- */
