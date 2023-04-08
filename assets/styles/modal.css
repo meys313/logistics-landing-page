@@ -15,20 +15,27 @@ body.no-scroll{
     bottom: 0;
     right: 0;
     z-index: 100;
-
     background-color: rgba(0,0,0, .5);
-
-    display: flex;
     justify-content: center;
     align-items: center;
-
     display: none;
 }
-
+.modal.show{
+    display: flex;
+}
 .modal__inner{
     max-width: 60%;
     position: relative;
+    opacity: 0;
+    transform: scale(0);
+
+    transition: transform .3s ease-out, opacity .3s ease-out;
 }
+.modal__inner.animate{
+    opacity: 1;
+    transform: scale(1);
+}
+
 .modal__close{
     position: absolute;
     padding: 0;

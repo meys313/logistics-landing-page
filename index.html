@@ -21,7 +21,7 @@
                     <a class="nav__link" href="#" data-scroll="#benefits">Benefits</a>
                     <a class="nav__link" href="#" data-scroll="#team">Team</a>
                     <a class="nav__link" href="#" data-scroll="#news">News</a>
-                    <a class="nav__link" href="#">Contact Us</a>
+                    <a class="nav__link" href="#" data-modal="#formModal">Contact Us</a>
                 </nav>
 
                 <button class="nav__burger"><i class="fa-solid fa-bars"></i></button>
@@ -45,28 +45,27 @@
                     <div class="form__content">
                         <form action="#" method="post">
                             <div class="form__group">
-                                <input type="text"
+                                <input  required type="text"
                                 class="form__input form__input--user"
                                 placeholder="Your name"
                                 >
                             </div>
 
                             <div class="form__group">
-                                <input type="tel"
+                                <input required type="tel"
                                 class="form__input form__input--phone"
                                 placeholder="Your phone"
                                 >
                             </div>
 
                             <div class="form__group">
-                                <input type="email"
+                                <input required type="email"
                                        class="form__input form__input--email"
                                        placeholder="Your e-mail"
                                 >
                             </div>
+                            <button class="button--gradient button--full" data-modal="#responseModal">Call me back</button>
                         </form>
-
-                        <button class="button--gradient button--full">Call me back</button>
                     </div>
                 </div>
                 <div class="intro__text">
@@ -81,7 +80,7 @@
 
                     </h1>
 
-                    <button class="button--blue button--intro">
+                    <button class="button--blue button--intro" data-modal="#formModal">
                         Fill a little form and we will call you back!
                     </button>
                 </div>
@@ -246,7 +245,7 @@
             </div>
 
             <div class="clients__buttons">
-                <button class="button--gradient button--clients">Become a client</button>
+                <button class="button--gradient button--clients" data-modal="#formModal">Become a client</button>
                 <a href="#" class="link">more information about our clients</a>
             </div>
         </div>
@@ -406,7 +405,7 @@
                     <div class="mission__second-text">Book your Cargo now & Your job just got a lot easier</div>
                     <div class="mission__border-gradient"></div>
                 </div>
-                <button class="button--gradient">Become a client</button>
+                <button class="button--gradient"  data-modal="#formModal">Become a client</button>
             </div>
         </div>
     </div>
@@ -525,8 +524,8 @@
                             </div>
                         </form>
 
-                        <button class="button--gradient button--full button--form">Call me back</button>
-                        <button class="button--blue button--full button--form">Close</button>
+                        <button class="button--gradient button--full button--form" data-modal-close="" data-modal="#responseModal">Call me back</button>
+                        <button class="button--blue button--full button--form" data-modal-close="">Close</button>
                     </div>
                     <div class="modal__contacts">
                         <h3 class="contacts__title">Our contacts</h3>
@@ -556,7 +555,7 @@
                     </div>
 
                     <div class="form__content">
-                        <button class="button--blue button--full">
+                        <button class="button--blue button--full" data-modal-close="">
                             Close
                         </button>
                         <div class="modal__contacts">
