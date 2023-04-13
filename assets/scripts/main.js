@@ -1,16 +1,33 @@
 "use strict"
 
 $(function (){
-
-    //  window height
-    let windowHeight = $(window).height();
-
     // DOM элементы
     const body = $('body');
     const blockIntro = $('#intro');
     const blockHeader = $('header');
 
     const blockIntroHeight = blockIntro.innerHeight();
+
+    // nav
+    let navToggle = $('#navToggle');
+    let nav = $('#nav');
+
+    navToggle.on('click', function(event){
+        event.preventDefault();
+        $(this).toggleClass('active');
+        nav.toggleClass('show');
+        body.toggleClass('no-scroll')
+    })
+
+    nav.on('click', function (){
+        if($(this).hasClass('show')){
+            navToggle.removeClass('active');
+            $(this).removeClass('show');
+        }
+    })
+    //  window height
+    let windowHeight = $(window).height();
+
 
 
     $(window).on("scroll", function (event){
@@ -101,6 +118,8 @@ $(function (){
     $('.modal__inner').on('click', function(event){
         event.stopPropagation();
     })
+
+
 
 });
 
